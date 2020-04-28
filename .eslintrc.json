@@ -29,6 +29,7 @@
         "prettier"
     ],
     "rules": {
+        "no-unused-expressions":"off",
         "react/jsx-indent-props":"off",
         "react/jsx-indent":"off", // regra colocada Jader
         "react/react-in-jsx-scope":"off", // regra colocada jader
