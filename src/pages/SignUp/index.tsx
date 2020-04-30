@@ -3,9 +3,10 @@ import { FiArrowLeft, FiMail, FiUser, FiLock } from 'react-icons/fi';
 import { FormHandles } from '@unform/core';
 import { Form } from '@unform/web';
 import * as Yup from 'yup';
+import { Link } from 'react-router-dom';
 import getValidationErrors from '../../utils/getValidationErrors';
-import logoimg from '../../assets/logo.svg';
-import { Container, Content, Background } from './styles';
+import logoimg from '../../assets/logo.png';
+import { Container, Content, AnimationContainer, Background } from './styles';
 
 import Input from '../../components/Input';
 import Button from '../../components/Button';
@@ -35,28 +36,30 @@ const SignUp: React.FC = () => {
         <Container>
             <Background />
             <Content>
-                <img src={logoimg} alt="GoBarber" />
-                <Form ref={formRef} onSubmit={handleSubmit}>
-                    <h1>Faça seu cadastro</h1>
-                    <Input name="name" icon={FiUser} placeholder="Nome" />
-                    <Input
-                        name="email"
-                        icon={FiMail}
-                        placeholder="Digite seu email"
-                        type="E-mail"
-                    />
-                    <Input
-                        name="password"
-                        icon={FiLock}
-                        placeholder="Senha"
-                        type="password"
-                    />
-                    <Button type="submit">Cadastrar</Button>
-                    <a href="login">
-                        <FiArrowLeft />
-                        Voltar para login
-                    </a>
-                </Form>
+                <AnimationContainer>
+                    <img src={logoimg} alt="GoBarber" width="380" />
+                    <Form ref={formRef} onSubmit={handleSubmit}>
+                        <h1>Faça seu cadastro</h1>
+                        <Input name="name" icon={FiUser} placeholder="Nome" />
+                        <Input
+                            name="email"
+                            icon={FiMail}
+                            placeholder="Digite seu email"
+                            type="E-mail"
+                        />
+                        <Input
+                            name="password"
+                            icon={FiLock}
+                            placeholder="Senha"
+                            type="password"
+                        />
+                        <Button type="submit">Cadastrar</Button>
+                        <Link to="/">
+                            <FiArrowLeft />
+                            Voltar para login
+                        </Link>
+                    </Form>
+                </AnimationContainer>
             </Content>
         </Container>
     );
