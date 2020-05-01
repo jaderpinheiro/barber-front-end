@@ -16,7 +16,7 @@ Este projeto faz parte de uma série Back-end Front-End e Mobile que ficaram dis
 Para falar comigo <a href="https://br.linkedin.com/in/jader-borges-pinheiro-a0b68920" title="Jader Borges Pinheiro">Linkedin</a>
 
 Além disso, você pode usar este projeto como desejar, estudar, fazer melhorias em fim é free!
-<b>Lembrando que não foi concluído</b>
+<b>Lembrando que não foi concluído aguarde as próximas atualizações.</b>
 
 # Algumas observações sobre o goBarber
 
